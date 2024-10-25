@@ -1,0 +1,58 @@
+// schema.prisma
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Publisher {
+  id             Int             @id @default(autoincrement())
+  userName       String          @unique
+  firstName      String
+  lastName       String
+  email          String          @unique
+  phone          String          @unique
+  profilePicture String?
+  password       String
+  news           News[]
+  status         PublisherStatus @default(PENDING)
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @updatedAt
+}
+
+model News {
+  id                Int        @id @default(autoincrement())
+  title             String
+  content           String
+  coverImage        String?
+  publisherUserName String
+  publisher         Publisher  @relation(fields: [publisherUserName], references: [userName])
+  reports           Report[]
+  status            NewsStatus @default(PENDING)
+  createdAt         DateTime   @default(now())
+  updatedAt         DateTime   @updatedAt
+}
+
+model Report {
+  id          Int      @id @default(autoincrement())
+  reason      String
+  description String?
+  news        News     @relation(fields: [newsId], references: [id])
+  newsId      Int
+  createdAt   DateTime @default(now())
+}
+
+enum PublisherStatus {
+  PENDING
+  APPROVED
+  SUSPENDED
+}
+
+enum NewsStatus {
+  PENDING
+  APPROVED
+  SUSPENDED
+}

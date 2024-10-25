@@ -1,0 +1,734 @@
+{
+  "id": 1,
+  "email": "natagibiye@gmail.com",
+  "institutionalId": "bdu1603375",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$Ofwltxw851HBtD/RGwGvgg$+w4nZ6V34zZuOi1LTFljWuX4jfZnqZeyh/TcZSABnKc",
+  "firstName": "natnael",
+  "lastName": "tadele",
+  "profilePicture": null,
+  "role": "USER",
+  "createdAt": "2024-07-17T17:47:59.904Z",
+  "updatedAt": "2024-07-17T17:47:59.904Z",
+  "wallet": {
+    "id": 2,
+    "userId": 1,
+    "balance": "5600"
+  },
+  "posts": [
+    {
+      "id": 5,
+      "headline": "check out our new menu",
+      "content": "the best dabo kolo ever it will reminde you the real dabo.",
+      "picture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/_posts/1721368038496-photo_2022-12-14_21-24-56.jpg",
+      "userId": 1,
+      "businessId": null,
+      "createdAt": "2024-07-19T05:47:18.499Z",
+      "updatedAt": "2024-07-19T05:47:18.499Z"
+    },
+    {
+      "id": 6,
+      "headline": "check out our new menu",
+      "content": "the best dabo kolo ever it will reminde you the real dabo.",
+      "picture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/_posts/1721368053108-photo_2022-12-14_21-24-56.jpg",
+      "userId": 1,
+      "businessId": null,
+      "createdAt": "2024-07-19T05:47:33.120Z",
+      "updatedAt": "2024-07-19T05:47:33.120Z"
+    }
+  ],
+  "favoriteBusinesses": [
+    {
+      "id": 7,
+      "userId": 1,
+      "businessId": 1,
+      "business": {
+        "id": 1,
+        "name": "nati hotel",
+        "password": "$argon2id$v=19$m=65536,t=3,p=4$M+IWXLtp8DCaoIqK3AFSHQ$59wM6ziMMsUhYU6ExHuSHVqh4UvMQXJoCiAhUk1X5L4",
+        "businessOwnerName": "natnael tadele",
+        "businessRegistrationNo": "111323222",
+        "bankName": "zemen",
+        "bankAccountNumber": "10002333",
+        "contactNumber": "0909523",
+        "contactEmail": "natataffff@gmail.com",
+        "noOfCustomers": 0,
+        "rating": "0",
+        "address": "bahir dar infront of poly",
+        "shortDescription": "tigab betachu yigba",
+        "aboutBusiness": "Ewenet Communication is a software company that specializes in logo and branding, interior design, web development, software development, social media marketing, mobile app development, and video production.\n\nEwenet is a startup company founded by three young innovators, thinkers, hardworking, talented, and dedicated who strive to build a better Africa via technology. Within the past years, Ewenet developed different impactful innovations in Ethiopia that were recognized by the government, the media (local and international), and the public in general. Providing maximum satisfaction and value higher than client expectation is at most priority at Ewenet.",
+        "profilePicture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493156-apple_music_room-wallpaper-2560x1600.jpg",
+        "bannerPicture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493178-4fd88ec55e0615a92b9db061b8dde75b.jpg",
+        "website": "ewenet.net",
+        "openHours": "24/7",
+        "socialMediaLinks": [
+          ".te/ewenet",
+          ".youtube.com/ewenet",
+          ".twiter.com/ewenet"
+        ],
+        "moto": "tigab beyalachubet ligeba new",
+        "approvalStatus": "PENDING",
+        "businessStatus": "OPEN",
+        "businessModel": "SERVICE",
+        "scannedOwnerId": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493183-IMG_20231107_150436118.jpg",
+        "scannedLicenses": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493209-Screenshot (20) (3).png",
+        "additionalDocuments": [
+          "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493211-minion_party-wallpaper-2880x1800.jpg"
+        ],
+        "createdAt": "2024-07-17T17:48:13.427Z",
+        "updatedAt": "2024-07-23T08:50:34.018Z"
+      }
+    }
+  ],
+  "favoriteMenus": [
+    {
+      "id": 6,
+      "userId": 1,
+      "menuId": 1,
+      "menu": {
+        "id": 1,
+        "businessId": 1,
+        "itemName": "quwanta fr fr",
+        "itemDescription": "asdfkjldfs kljsdfjlkdfs dfkljkjkl adfskljkjfdjklkl sdfjkldasflkj  dsalkjdfslkj adsfkjldlkj adfjkladlkj",
+        "itemPrice": "110",
+        "noOfOrders": 0,
+        "rating": "0",
+        "status": "AVAILABLE",
+        "picture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238543267-Screenshot from 2024-06-28 11-15-59.png",
+        "createdAt": "2024-07-17T17:49:03.439Z",
+        "updatedAt": "2024-07-17T17:49:03.439Z",
+        "business": {
+          "id": 1,
+          "name": "nati hotel",
+          "password": "$argon2id$v=19$m=65536,t=3,p=4$M+IWXLtp8DCaoIqK3AFSHQ$59wM6ziMMsUhYU6ExHuSHVqh4UvMQXJoCiAhUk1X5L4",
+          "businessOwnerName": "natnael tadele",
+          "businessRegistrationNo": "111323222",
+          "bankName": "zemen",
+          "bankAccountNumber": "10002333",
+          "contactNumber": "0909523",
+          "contactEmail": "natataffff@gmail.com",
+          "noOfCustomers": 0,
+          "rating": "0",
+          "address": "bahir dar infront of poly",
+          "shortDescription": "tigab betachu yigba",
+          "aboutBusiness": "Ewenet Communication is a software company that specializes in logo and branding, interior design, web development, software development, social media marketing, mobile app development, and video production.\n\nEwenet is a startup company founded by three young innovators, thinkers, hardworking, talented, and dedicated who strive to build a better Africa via technology. Within the past years, Ewenet developed different impactful innovations in Ethiopia that were recognized by the government, the media (local and international), and the public in general. Providing maximum satisfaction and value higher than client expectation is at most priority at Ewenet.",
+          "profilePicture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493156-apple_music_room-wallpaper-2560x1600.jpg",
+          "bannerPicture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493178-4fd88ec55e0615a92b9db061b8dde75b.jpg",
+          "website": "ewenet.net",
+          "openHours": "24/7",
+          "socialMediaLinks": [
+            ".te/ewenet",
+            ".youtube.com/ewenet",
+            ".twiter.com/ewenet"
+          ],
+          "moto": "tigab beyalachubet ligeba new",
+          "approvalStatus": "PENDING",
+          "businessStatus": "OPEN",
+          "businessModel": "SERVICE",
+          "scannedOwnerId": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493183-IMG_20231107_150436118.jpg",
+          "scannedLicenses": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493209-Screenshot (20) (3).png",
+          "additionalDocuments": [
+            "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493211-minion_party-wallpaper-2880x1800.jpg"
+          ],
+          "createdAt": "2024-07-17T17:48:13.427Z",
+          "updatedAt": "2024-07-23T08:50:34.018Z"
+        }
+      }
+    }
+  ],
+  "favoriteServices": [
+    {
+      "id": 10,
+      "userId": 1,
+      "serviceId": 13,
+      "service": {
+        "id": 13,
+        "businessId": 1,
+        "serviceName": "ayiiiiiiiiiii",
+        "description": "ayiiiiiiiiii",
+        "price": "111",
+        "rating": "0",
+        "status": "AVAILABLE",
+        "customersInQueue": 0,
+        "picture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721692800579-Stance Muse Summer See-Through Collection.jpeg",
+        "createdAt": "2024-07-23T00:00:00.754Z",
+        "updatedAt": "2024-07-23T00:00:00.754Z",
+        "business": {
+          "id": 1,
+          "name": "nati hotel",
+          "password": "$argon2id$v=19$m=65536,t=3,p=4$M+IWXLtp8DCaoIqK3AFSHQ$59wM6ziMMsUhYU6ExHuSHVqh4UvMQXJoCiAhUk1X5L4",
+          "businessOwnerName": "natnael tadele",
+          "businessRegistrationNo": "111323222",
+          "bankName": "zemen",
+          "bankAccountNumber": "10002333",
+          "contactNumber": "0909523",
+          "contactEmail": "natataffff@gmail.com",
+          "noOfCustomers": 0,
+          "rating": "0",
+          "address": "bahir dar infront of poly",
+          "shortDescription": "tigab betachu yigba",
+          "aboutBusiness": "Ewenet Communication is a software company that specializes in logo and branding, interior design, web development, software development, social media marketing, mobile app development, and video production.\n\nEwenet is a startup company founded by three young innovators, thinkers, hardworking, talented, and dedicated who strive to build a better Africa via technology. Within the past years, Ewenet developed different impactful innovations in Ethiopia that were recognized by the government, the media (local and international), and the public in general. Providing maximum satisfaction and value higher than client expectation is at most priority at Ewenet.",
+          "profilePicture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493156-apple_music_room-wallpaper-2560x1600.jpg",
+          "bannerPicture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493178-4fd88ec55e0615a92b9db061b8dde75b.jpg",
+          "website": "ewenet.net",
+          "openHours": "24/7",
+          "socialMediaLinks": [
+            ".te/ewenet",
+            ".youtube.com/ewenet",
+            ".twiter.com/ewenet"
+          ],
+          "moto": "tigab beyalachubet ligeba new",
+          "approvalStatus": "PENDING",
+          "businessStatus": "OPEN",
+          "businessModel": "SERVICE",
+          "scannedOwnerId": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493183-IMG_20231107_150436118.jpg",
+          "scannedLicenses": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493209-Screenshot (20) (3).png",
+          "additionalDocuments": [
+            "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493211-minion_party-wallpaper-2880x1800.jpg"
+          ],
+          "createdAt": "2024-07-17T17:48:13.427Z",
+          "updatedAt": "2024-07-23T08:50:34.018Z"
+        }
+      }
+    },
+    {
+      "id": 11,
+      "userId": 1,
+      "serviceId": 12,
+      "service": {
+        "id": 12,
+        "businessId": 1,
+        "serviceName": "on night",
+        "description": "we give the best massage in the city. we offer discouts for students. your privacy is our consern to. lets get those nerves freash",
+        "price": "431",
+        "rating": "0",
+        "status": "AVAILABLE",
+        "customersInQueue": 0,
+        "picture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721690011054-photo_2022-12-14_21-24-56.jpg",
+        "createdAt": "2024-07-22T23:13:31.071Z",
+        "updatedAt": "2024-07-22T23:13:31.071Z",
+        "business": {
+          "id": 1,
+          "name": "nati hotel",
+          "password": "$argon2id$v=19$m=65536,t=3,p=4$M+IWXLtp8DCaoIqK3AFSHQ$59wM6ziMMsUhYU6ExHuSHVqh4UvMQXJoCiAhUk1X5L4",
+          "businessOwnerName": "natnael tadele",
+          "businessRegistrationNo": "111323222",
+          "bankName": "zemen",
+          "bankAccountNumber": "10002333",
+          "contactNumber": "0909523",
+          "contactEmail": "natataffff@gmail.com",
+          "noOfCustomers": 0,
+          "rating": "0",
+          "address": "bahir dar infront of poly",
+          "shortDescription": "tigab betachu yigba",
+          "aboutBusiness": "Ewenet Communication is a software company that specializes in logo and branding, interior design, web development, software development, social media marketing, mobile app development, and video production.\n\nEwenet is a startup company founded by three young innovators, thinkers, hardworking, talented, and dedicated who strive to build a better Africa via technology. Within the past years, Ewenet developed different impactful innovations in Ethiopia that were recognized by the government, the media (local and international), and the public in general. Providing maximum satisfaction and value higher than client expectation is at most priority at Ewenet.",
+          "profilePicture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493156-apple_music_room-wallpaper-2560x1600.jpg",
+          "bannerPicture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493178-4fd88ec55e0615a92b9db061b8dde75b.jpg",
+          "website": "ewenet.net",
+          "openHours": "24/7",
+          "socialMediaLinks": [
+            ".te/ewenet",
+            ".youtube.com/ewenet",
+            ".twiter.com/ewenet"
+          ],
+          "moto": "tigab beyalachubet ligeba new",
+          "approvalStatus": "PENDING",
+          "businessStatus": "OPEN",
+          "businessModel": "SERVICE",
+          "scannedOwnerId": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493183-IMG_20231107_150436118.jpg",
+          "scannedLicenses": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493209-Screenshot (20) (3).png",
+          "additionalDocuments": [
+            "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493211-minion_party-wallpaper-2880x1800.jpg"
+          ],
+          "createdAt": "2024-07-17T17:48:13.427Z",
+          "updatedAt": "2024-07-23T08:50:34.018Z"
+        }
+      }
+    },
+    {
+      "id": 12,
+      "userId": 1,
+      "serviceId": 9,
+      "service": {
+        "id": 9,
+        "businessId": 1,
+        "serviceName": "service name",
+        "description": "we give the best massage in the city. we offer discouts for students. your privacy is our consern to. lets get those nerves freash",
+        "price": "333",
+        "rating": "0",
+        "status": "AVAILABLE",
+        "customersInQueue": 0,
+        "picture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721688405781-photo_2022-12-14_21-24-56.jpg",
+        "createdAt": "2024-07-22T22:46:45.793Z",
+        "updatedAt": "2024-07-22T22:46:45.793Z",
+        "business": {
+          "id": 1,
+          "name": "nati hotel",
+          "password": "$argon2id$v=19$m=65536,t=3,p=4$M+IWXLtp8DCaoIqK3AFSHQ$59wM6ziMMsUhYU6ExHuSHVqh4UvMQXJoCiAhUk1X5L4",
+          "businessOwnerName": "natnael tadele",
+          "businessRegistrationNo": "111323222",
+          "bankName": "zemen",
+          "bankAccountNumber": "10002333",
+          "contactNumber": "0909523",
+          "contactEmail": "natataffff@gmail.com",
+          "noOfCustomers": 0,
+          "rating": "0",
+          "address": "bahir dar infront of poly",
+          "shortDescription": "tigab betachu yigba",
+          "aboutBusiness": "Ewenet Communication is a software company that specializes in logo and branding, interior design, web development, software development, social media marketing, mobile app development, and video production.\n\nEwenet is a startup company founded by three young innovators, thinkers, hardworking, talented, and dedicated who strive to build a better Africa via technology. Within the past years, Ewenet developed different impactful innovations in Ethiopia that were recognized by the government, the media (local and international), and the public in general. Providing maximum satisfaction and value higher than client expectation is at most priority at Ewenet.",
+          "profilePicture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493156-apple_music_room-wallpaper-2560x1600.jpg",
+          "bannerPicture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493178-4fd88ec55e0615a92b9db061b8dde75b.jpg",
+          "website": "ewenet.net",
+          "openHours": "24/7",
+          "socialMediaLinks": [
+            ".te/ewenet",
+            ".youtube.com/ewenet",
+            ".twiter.com/ewenet"
+          ],
+          "moto": "tigab beyalachubet ligeba new",
+          "approvalStatus": "PENDING",
+          "businessStatus": "OPEN",
+          "businessModel": "SERVICE",
+          "scannedOwnerId": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493183-IMG_20231107_150436118.jpg",
+          "scannedLicenses": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493209-Screenshot (20) (3).png",
+          "additionalDocuments": [
+            "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493211-minion_party-wallpaper-2880x1800.jpg"
+          ],
+          "createdAt": "2024-07-17T17:48:13.427Z",
+          "updatedAt": "2024-07-23T08:50:34.018Z"
+        }
+      }
+    },
+    {
+      "id": 13,
+      "userId": 1,
+      "serviceId": 5,
+      "service": {
+        "id": 5,
+        "businessId": 1,
+        "serviceName": "massage",
+        "description": "we give the best massage in the city. we offer discouts for students. your privacy is our consern to. lets get those nerves freash",
+        "price": "400",
+        "rating": "0",
+        "status": "AVAILABLE",
+        "customersInQueue": 0,
+        "picture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721688106999-photo_2022-12-14_21-24-56.jpg",
+        "createdAt": "2024-07-22T22:41:47.010Z",
+        "updatedAt": "2024-07-22T22:41:47.010Z",
+        "business": {
+          "id": 1,
+          "name": "nati hotel",
+          "password": "$argon2id$v=19$m=65536,t=3,p=4$M+IWXLtp8DCaoIqK3AFSHQ$59wM6ziMMsUhYU6ExHuSHVqh4UvMQXJoCiAhUk1X5L4",
+          "businessOwnerName": "natnael tadele",
+          "businessRegistrationNo": "111323222",
+          "bankName": "zemen",
+          "bankAccountNumber": "10002333",
+          "contactNumber": "0909523",
+          "contactEmail": "natataffff@gmail.com",
+          "noOfCustomers": 0,
+          "rating": "0",
+          "address": "bahir dar infront of poly",
+          "shortDescription": "tigab betachu yigba",
+          "aboutBusiness": "Ewenet Communication is a software company that specializes in logo and branding, interior design, web development, software development, social media marketing, mobile app development, and video production.\n\nEwenet is a startup company founded by three young innovators, thinkers, hardworking, talented, and dedicated who strive to build a better Africa via technology. Within the past years, Ewenet developed different impactful innovations in Ethiopia that were recognized by the government, the media (local and international), and the public in general. Providing maximum satisfaction and value higher than client expectation is at most priority at Ewenet.",
+          "profilePicture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493156-apple_music_room-wallpaper-2560x1600.jpg",
+          "bannerPicture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493178-4fd88ec55e0615a92b9db061b8dde75b.jpg",
+          "website": "ewenet.net",
+          "openHours": "24/7",
+          "socialMediaLinks": [
+            ".te/ewenet",
+            ".youtube.com/ewenet",
+            ".twiter.com/ewenet"
+          ],
+          "moto": "tigab beyalachubet ligeba new",
+          "approvalStatus": "PENDING",
+          "businessStatus": "OPEN",
+          "businessModel": "SERVICE",
+          "scannedOwnerId": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493183-IMG_20231107_150436118.jpg",
+          "scannedLicenses": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493209-Screenshot (20) (3).png",
+          "additionalDocuments": [
+            "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493211-minion_party-wallpaper-2880x1800.jpg"
+          ],
+          "createdAt": "2024-07-17T17:48:13.427Z",
+          "updatedAt": "2024-07-23T08:50:34.018Z"
+        }
+      }
+    },
+    {
+      "id": 14,
+      "userId": 1,
+      "serviceId": 6,
+      "service": {
+        "id": 6,
+        "businessId": 1,
+        "serviceName": "jaquzzi",
+        "description": "we give the best massage in the city. we offer discouts for students. your privacy is our consern to. lets get those nerves freash",
+        "price": "399",
+        "rating": "0",
+        "status": "AVAILABLE",
+        "customersInQueue": 0,
+        "picture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721688179632-photo_2022-12-14_21-24-56.jpg",
+        "createdAt": "2024-07-22T22:42:59.637Z",
+        "updatedAt": "2024-07-22T22:42:59.637Z",
+        "business": {
+          "id": 1,
+          "name": "nati hotel",
+          "password": "$argon2id$v=19$m=65536,t=3,p=4$M+IWXLtp8DCaoIqK3AFSHQ$59wM6ziMMsUhYU6ExHuSHVqh4UvMQXJoCiAhUk1X5L4",
+          "businessOwnerName": "natnael tadele",
+          "businessRegistrationNo": "111323222",
+          "bankName": "zemen",
+          "bankAccountNumber": "10002333",
+          "contactNumber": "0909523",
+          "contactEmail": "natataffff@gmail.com",
+          "noOfCustomers": 0,
+          "rating": "0",
+          "address": "bahir dar infront of poly",
+          "shortDescription": "tigab betachu yigba",
+          "aboutBusiness": "Ewenet Communication is a software company that specializes in logo and branding, interior design, web development, software development, social media marketing, mobile app development, and video production.\n\nEwenet is a startup company founded by three young innovators, thinkers, hardworking, talented, and dedicated who strive to build a better Africa via technology. Within the past years, Ewenet developed different impactful innovations in Ethiopia that were recognized by the government, the media (local and international), and the public in general. Providing maximum satisfaction and value higher than client expectation is at most priority at Ewenet.",
+          "profilePicture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493156-apple_music_room-wallpaper-2560x1600.jpg",
+          "bannerPicture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493178-4fd88ec55e0615a92b9db061b8dde75b.jpg",
+          "website": "ewenet.net",
+          "openHours": "24/7",
+          "socialMediaLinks": [
+            ".te/ewenet",
+            ".youtube.com/ewenet",
+            ".twiter.com/ewenet"
+          ],
+          "moto": "tigab beyalachubet ligeba new",
+          "approvalStatus": "PENDING",
+          "businessStatus": "OPEN",
+          "businessModel": "SERVICE",
+          "scannedOwnerId": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493183-IMG_20231107_150436118.jpg",
+          "scannedLicenses": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493209-Screenshot (20) (3).png",
+          "additionalDocuments": [
+            "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493211-minion_party-wallpaper-2880x1800.jpg"
+          ],
+          "createdAt": "2024-07-17T17:48:13.427Z",
+          "updatedAt": "2024-07-23T08:50:34.018Z"
+        }
+      }
+    },
+    {
+      "id": 15,
+      "userId": 1,
+      "serviceId": 8,
+      "service": {
+        "id": 8,
+        "businessId": 1,
+        "serviceName": "gim",
+        "description": "we give the best massage in the city. we offer discouts for students. your privacy is our consern to. lets get those nerves freash",
+        "price": "333",
+        "rating": "0",
+        "status": "AVAILABLE",
+        "customersInQueue": 0,
+        "picture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721688308498-photo_2022-12-14_21-24-56.jpg",
+        "createdAt": "2024-07-22T22:45:08.504Z",
+        "updatedAt": "2024-07-22T22:45:08.504Z",
+        "business": {
+          "id": 1,
+          "name": "nati hotel",
+          "password": "$argon2id$v=19$m=65536,t=3,p=4$M+IWXLtp8DCaoIqK3AFSHQ$59wM6ziMMsUhYU6ExHuSHVqh4UvMQXJoCiAhUk1X5L4",
+          "businessOwnerName": "natnael tadele",
+          "businessRegistrationNo": "111323222",
+          "bankName": "zemen",
+          "bankAccountNumber": "10002333",
+          "contactNumber": "0909523",
+          "contactEmail": "natataffff@gmail.com",
+          "noOfCustomers": 0,
+          "rating": "0",
+          "address": "bahir dar infront of poly",
+          "shortDescription": "tigab betachu yigba",
+          "aboutBusiness": "Ewenet Communication is a software company that specializes in logo and branding, interior design, web development, software development, social media marketing, mobile app development, and video production.\n\nEwenet is a startup company founded by three young innovators, thinkers, hardworking, talented, and dedicated who strive to build a better Africa via technology. Within the past years, Ewenet developed different impactful innovations in Ethiopia that were recognized by the government, the media (local and international), and the public in general. Providing maximum satisfaction and value higher than client expectation is at most priority at Ewenet.",
+          "profilePicture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493156-apple_music_room-wallpaper-2560x1600.jpg",
+          "bannerPicture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493178-4fd88ec55e0615a92b9db061b8dde75b.jpg",
+          "website": "ewenet.net",
+          "openHours": "24/7",
+          "socialMediaLinks": [
+            ".te/ewenet",
+            ".youtube.com/ewenet",
+            ".twiter.com/ewenet"
+          ],
+          "moto": "tigab beyalachubet ligeba new",
+          "approvalStatus": "PENDING",
+          "businessStatus": "OPEN",
+          "businessModel": "SERVICE",
+          "scannedOwnerId": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493183-IMG_20231107_150436118.jpg",
+          "scannedLicenses": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493209-Screenshot (20) (3).png",
+          "additionalDocuments": [
+            "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493211-minion_party-wallpaper-2880x1800.jpg"
+          ],
+          "createdAt": "2024-07-17T17:48:13.427Z",
+          "updatedAt": "2024-07-23T08:50:34.018Z"
+        }
+      }
+    },
+    {
+      "id": 16,
+      "userId": 1,
+      "serviceId": 14,
+      "service": {
+        "id": 14,
+        "businessId": 1,
+        "serviceName": "ayiiiiiiii 2",
+        "description": "ayiiiiiiiii2 ",
+        "price": "222",
+        "rating": "0",
+        "status": "AVAILABLE",
+        "customersInQueue": 0,
+        "picture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721692890151-Stance Muse Summer See-Through Collection.jpeg",
+        "createdAt": "2024-07-23T00:01:30.236Z",
+        "updatedAt": "2024-07-23T00:01:30.236Z",
+        "business": {
+          "id": 1,
+          "name": "nati hotel",
+          "password": "$argon2id$v=19$m=65536,t=3,p=4$M+IWXLtp8DCaoIqK3AFSHQ$59wM6ziMMsUhYU6ExHuSHVqh4UvMQXJoCiAhUk1X5L4",
+          "businessOwnerName": "natnael tadele",
+          "businessRegistrationNo": "111323222",
+          "bankName": "zemen",
+          "bankAccountNumber": "10002333",
+          "contactNumber": "0909523",
+          "contactEmail": "natataffff@gmail.com",
+          "noOfCustomers": 0,
+          "rating": "0",
+          "address": "bahir dar infront of poly",
+          "shortDescription": "tigab betachu yigba",
+          "aboutBusiness": "Ewenet Communication is a software company that specializes in logo and branding, interior design, web development, software development, social media marketing, mobile app development, and video production.\n\nEwenet is a startup company founded by three young innovators, thinkers, hardworking, talented, and dedicated who strive to build a better Africa via technology. Within the past years, Ewenet developed different impactful innovations in Ethiopia that were recognized by the government, the media (local and international), and the public in general. Providing maximum satisfaction and value higher than client expectation is at most priority at Ewenet.",
+          "profilePicture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493156-apple_music_room-wallpaper-2560x1600.jpg",
+          "bannerPicture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493178-4fd88ec55e0615a92b9db061b8dde75b.jpg",
+          "website": "ewenet.net",
+          "openHours": "24/7",
+          "socialMediaLinks": [
+            ".te/ewenet",
+            ".youtube.com/ewenet",
+            ".twiter.com/ewenet"
+          ],
+          "moto": "tigab beyalachubet ligeba new",
+          "approvalStatus": "PENDING",
+          "businessStatus": "OPEN",
+          "businessModel": "SERVICE",
+          "scannedOwnerId": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493183-IMG_20231107_150436118.jpg",
+          "scannedLicenses": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493209-Screenshot (20) (3).png",
+          "additionalDocuments": [
+            "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493211-minion_party-wallpaper-2880x1800.jpg"
+          ],
+          "createdAt": "2024-07-17T17:48:13.427Z",
+          "updatedAt": "2024-07-23T08:50:34.018Z"
+        }
+      }
+    },
+    {
+      "id": 17,
+      "userId": 1,
+      "serviceId": 15,
+      "service": {
+        "id": 15,
+        "businessId": 1,
+        "serviceName": "this is me ",
+        "description": "yes this is me ",
+        "price": "231",
+        "rating": "0",
+        "status": "AVAILABLE",
+        "customersInQueue": 0,
+        "picture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721693031685-ct_iceage_scrat_21464_65c8193e.jpeg",
+        "createdAt": "2024-07-23T00:03:51.703Z",
+        "updatedAt": "2024-07-23T00:03:51.703Z",
+        "business": {
+          "id": 1,
+          "name": "nati hotel",
+          "password": "$argon2id$v=19$m=65536,t=3,p=4$M+IWXLtp8DCaoIqK3AFSHQ$59wM6ziMMsUhYU6ExHuSHVqh4UvMQXJoCiAhUk1X5L4",
+          "businessOwnerName": "natnael tadele",
+          "businessRegistrationNo": "111323222",
+          "bankName": "zemen",
+          "bankAccountNumber": "10002333",
+          "contactNumber": "0909523",
+          "contactEmail": "natataffff@gmail.com",
+          "noOfCustomers": 0,
+          "rating": "0",
+          "address": "bahir dar infront of poly",
+          "shortDescription": "tigab betachu yigba",
+          "aboutBusiness": "Ewenet Communication is a software company that specializes in logo and branding, interior design, web development, software development, social media marketing, mobile app development, and video production.\n\nEwenet is a startup company founded by three young innovators, thinkers, hardworking, talented, and dedicated who strive to build a better Africa via technology. Within the past years, Ewenet developed different impactful innovations in Ethiopia that were recognized by the government, the media (local and international), and the public in general. Providing maximum satisfaction and value higher than client expectation is at most priority at Ewenet.",
+          "profilePicture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493156-apple_music_room-wallpaper-2560x1600.jpg",
+          "bannerPicture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493178-4fd88ec55e0615a92b9db061b8dde75b.jpg",
+          "website": "ewenet.net",
+          "openHours": "24/7",
+          "socialMediaLinks": [
+            ".te/ewenet",
+            ".youtube.com/ewenet",
+            ".twiter.com/ewenet"
+          ],
+          "moto": "tigab beyalachubet ligeba new",
+          "approvalStatus": "PENDING",
+          "businessStatus": "OPEN",
+          "businessModel": "SERVICE",
+          "scannedOwnerId": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493183-IMG_20231107_150436118.jpg",
+          "scannedLicenses": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493209-Screenshot (20) (3).png",
+          "additionalDocuments": [
+            "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493211-minion_party-wallpaper-2880x1800.jpg"
+          ],
+          "createdAt": "2024-07-17T17:48:13.427Z",
+          "updatedAt": "2024-07-23T08:50:34.018Z"
+        }
+      }
+    },
+    {
+      "id": 20,
+      "userId": 1,
+      "serviceId": 1,
+      "service": {
+        "id": 1,
+        "businessId": 1,
+        "serviceName": "spa",
+        "description": "we give the best massage in the city. we offer discouts for students. your privacy is our consern to. lets get those nerves freash",
+        "price": "400",
+        "rating": "0",
+        "status": "AVAILABLE",
+        "customersInQueue": 0,
+        "picture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238873088-photo_2022-12-14_21-24-56.jpg",
+        "createdAt": "2024-07-17T17:54:33.190Z",
+        "updatedAt": "2024-07-17T17:54:33.190Z",
+        "business": {
+          "id": 1,
+          "name": "nati hotel",
+          "password": "$argon2id$v=19$m=65536,t=3,p=4$M+IWXLtp8DCaoIqK3AFSHQ$59wM6ziMMsUhYU6ExHuSHVqh4UvMQXJoCiAhUk1X5L4",
+          "businessOwnerName": "natnael tadele",
+          "businessRegistrationNo": "111323222",
+          "bankName": "zemen",
+          "bankAccountNumber": "10002333",
+          "contactNumber": "0909523",
+          "contactEmail": "natataffff@gmail.com",
+          "noOfCustomers": 0,
+          "rating": "0",
+          "address": "bahir dar infront of poly",
+          "shortDescription": "tigab betachu yigba",
+          "aboutBusiness": "Ewenet Communication is a software company that specializes in logo and branding, interior design, web development, software development, social media marketing, mobile app development, and video production.\n\nEwenet is a startup company founded by three young innovators, thinkers, hardworking, talented, and dedicated who strive to build a better Africa via technology. Within the past years, Ewenet developed different impactful innovations in Ethiopia that were recognized by the government, the media (local and international), and the public in general. Providing maximum satisfaction and value higher than client expectation is at most priority at Ewenet.",
+          "profilePicture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493156-apple_music_room-wallpaper-2560x1600.jpg",
+          "bannerPicture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493178-4fd88ec55e0615a92b9db061b8dde75b.jpg",
+          "website": "ewenet.net",
+          "openHours": "24/7",
+          "socialMediaLinks": [
+            ".te/ewenet",
+            ".youtube.com/ewenet",
+            ".twiter.com/ewenet"
+          ],
+          "moto": "tigab beyalachubet ligeba new",
+          "approvalStatus": "PENDING",
+          "businessStatus": "OPEN",
+          "businessModel": "SERVICE",
+          "scannedOwnerId": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493183-IMG_20231107_150436118.jpg",
+          "scannedLicenses": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493209-Screenshot (20) (3).png",
+          "additionalDocuments": [
+            "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493211-minion_party-wallpaper-2880x1800.jpg"
+          ],
+          "createdAt": "2024-07-17T17:48:13.427Z",
+          "updatedAt": "2024-07-23T08:50:34.018Z"
+        }
+      }
+    }
+  ],
+  "favoriteStocks": [
+    {
+      "id": 7,
+      "userId": 1,
+      "stockId": 1,
+      "stock": {
+        "id": 1,
+        "businessId": 1,
+        "itemName": "dabo kolo",
+        "itemDescription": "the best dabo kolo ever it will reminde you the real dabo.",
+        "quantity": 50,
+        "price": "35",
+        "rating": "0",
+        "picture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721325364362-photo_2022-12-14_21-24-56.jpg",
+        "createdAt": "2024-07-18T17:56:04.452Z",
+        "updatedAt": "2024-07-18T17:56:04.452Z",
+        "business": {
+          "id": 1,
+          "name": "nati hotel",
+          "password": "$argon2id$v=19$m=65536,t=3,p=4$M+IWXLtp8DCaoIqK3AFSHQ$59wM6ziMMsUhYU6ExHuSHVqh4UvMQXJoCiAhUk1X5L4",
+          "businessOwnerName": "natnael tadele",
+          "businessRegistrationNo": "111323222",
+          "bankName": "zemen",
+          "bankAccountNumber": "10002333",
+          "contactNumber": "0909523",
+          "contactEmail": "natataffff@gmail.com",
+          "noOfCustomers": 0,
+          "rating": "0",
+          "address": "bahir dar infront of poly",
+          "shortDescription": "tigab betachu yigba",
+          "aboutBusiness": "Ewenet Communication is a software company that specializes in logo and branding, interior design, web development, software development, social media marketing, mobile app development, and video production.\n\nEwenet is a startup company founded by three young innovators, thinkers, hardworking, talented, and dedicated who strive to build a better Africa via technology. Within the past years, Ewenet developed different impactful innovations in Ethiopia that were recognized by the government, the media (local and international), and the public in general. Providing maximum satisfaction and value higher than client expectation is at most priority at Ewenet.",
+          "profilePicture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493156-apple_music_room-wallpaper-2560x1600.jpg",
+          "bannerPicture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493178-4fd88ec55e0615a92b9db061b8dde75b.jpg",
+          "website": "ewenet.net",
+          "openHours": "24/7",
+          "socialMediaLinks": [
+            ".te/ewenet",
+            ".youtube.com/ewenet",
+            ".twiter.com/ewenet"
+          ],
+          "moto": "tigab beyalachubet ligeba new",
+          "approvalStatus": "PENDING",
+          "businessStatus": "OPEN",
+          "businessModel": "SERVICE",
+          "scannedOwnerId": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493183-IMG_20231107_150436118.jpg",
+          "scannedLicenses": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493209-Screenshot (20) (3).png",
+          "additionalDocuments": [
+            "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493211-minion_party-wallpaper-2880x1800.jpg"
+          ],
+          "createdAt": "2024-07-17T17:48:13.427Z",
+          "updatedAt": "2024-07-23T08:50:34.018Z"
+        }
+      }
+    },
+    {
+      "id": 11,
+      "userId": 1,
+      "stockId": 2,
+      "stock": {
+        "id": 2,
+        "businessId": 1,
+        "itemName": "juice",
+        "itemDescription": "the best dabo kolo ever it will reminde you the real dabo.",
+        "quantity": 50,
+        "price": "20",
+        "rating": "0",
+        "picture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721325864453-photo_2022-12-14_21-24-56.jpg",
+        "createdAt": "2024-07-18T18:04:24.585Z",
+        "updatedAt": "2024-07-18T18:04:24.585Z",
+        "business": {
+          "id": 1,
+          "name": "nati hotel",
+          "password": "$argon2id$v=19$m=65536,t=3,p=4$M+IWXLtp8DCaoIqK3AFSHQ$59wM6ziMMsUhYU6ExHuSHVqh4UvMQXJoCiAhUk1X5L4",
+          "businessOwnerName": "natnael tadele",
+          "businessRegistrationNo": "111323222",
+          "bankName": "zemen",
+          "bankAccountNumber": "10002333",
+          "contactNumber": "0909523",
+          "contactEmail": "natataffff@gmail.com",
+          "noOfCustomers": 0,
+          "rating": "0",
+          "address": "bahir dar infront of poly",
+          "shortDescription": "tigab betachu yigba",
+          "aboutBusiness": "Ewenet Communication is a software company that specializes in logo and branding, interior design, web development, software development, social media marketing, mobile app development, and video production.\n\nEwenet is a startup company founded by three young innovators, thinkers, hardworking, talented, and dedicated who strive to build a better Africa via technology. Within the past years, Ewenet developed different impactful innovations in Ethiopia that were recognized by the government, the media (local and international), and the public in general. Providing maximum satisfaction and value higher than client expectation is at most priority at Ewenet.",
+          "profilePicture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493156-apple_music_room-wallpaper-2560x1600.jpg",
+          "bannerPicture": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493178-4fd88ec55e0615a92b9db061b8dde75b.jpg",
+          "website": "ewenet.net",
+          "openHours": "24/7",
+          "socialMediaLinks": [
+            ".te/ewenet",
+            ".youtube.com/ewenet",
+            ".twiter.com/ewenet"
+          ],
+          "moto": "tigab beyalachubet ligeba new",
+          "approvalStatus": "PENDING",
+          "businessStatus": "OPEN",
+          "businessModel": "SERVICE",
+          "scannedOwnerId": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493183-IMG_20231107_150436118.jpg",
+          "scannedLicenses": "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493209-Screenshot (20) (3).png",
+          "additionalDocuments": [
+            "/home/natnael/Desktop/final-year/gibiye-back/uploads/nati hotel/1721238493211-minion_party-wallpaper-2880x1800.jpg"
+          ],
+          "createdAt": "2024-07-17T17:48:13.427Z",
+          "updatedAt": "2024-07-23T08:50:34.018Z"
+        }
+      }
+    }
+  ]
+}

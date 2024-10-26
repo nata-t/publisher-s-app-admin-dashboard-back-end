@@ -101,7 +101,7 @@ exports.getNewsById = async (req, res) => {
 //get news by publisher userName
 exports.getNewsByPublisherUserName = async (req, res) => {
   try {
-    if (!req.body.publisherUserName) {
+    if (!req.body.userName) {
       return res.status(400).json({
         message: "publisher UserName is required",
         status: "failed",
@@ -109,7 +109,7 @@ exports.getNewsByPublisherUserName = async (req, res) => {
       });
     }
     const news = await prisma.news.findMany({
-      where: { publisherUserName: req.body.publisherUserName },
+      where: { publisherUserName: req.body.userName },
       include: {
         reports: true,
       },
@@ -232,6 +232,115 @@ exports.createNews = async (req, res) => {
   }
 };
 
+exports.editNews = async (req, res) => {
+  try {
+    const publisherUserName = JSON.parse(req.headers.authorization).userName;
+    if (!publisherUserName) {
+      cleanupFiles(req.files);
+      return res.status(400).json({
+        message: "Publisher UserName not found, sign in again",
+        status: "failed",
+        data: null,
+      });
+    }
+
+    const publisher = await prisma.publisher.findUnique({
+      where: { userName: publisherUserName },
+      include: {
+        news: true,
+      },
+    });
+    if (!publisher) {
+      cleanupFiles(req.files);
+      return res.status(404).json({
+        message: "Publisher not found",
+        status: "failed",
+        data: null,
+      });
+    }
+    if (publisher.status === "SUSPENDED") {
+      cleanupFiles(req.files);
+      return res.status(401).json({
+        message: "Publisher is suspended",
+        status: "failed",
+        data: null,
+      });
+    }
+
+    const newsId = parseInt(req.body.id, 10);
+
+    if (!newsId) {
+      cleanupFiles(req.files);
+      return res.status(400).json({
+        message: "News id is required",
+        status: "failed",
+        data: null,
+      });
+    }
+    const errors = validateNewsData(req.body);
+    if (errors.length > 0) {
+      cleanupFiles(req.files);
+      return res.status(400).json({
+        message: "Invalid news data: " + errors.join(", "),
+        status: "failed",
+        data: errors,
+      });
+    }
+
+    const existingNews = await prisma.news.findUnique({
+      where: { id: newsId },
+    });
+    if (!existingNews) {
+      cleanupFiles(req.files);
+      return res.status(404).json({
+        message: "News item not found",
+        status: "failed",
+        data: null,
+      });
+    }
+
+    const coverImageFile = req.files?.coverImage
+      ? req.files.coverImage[0]
+      : null;
+    const coverImagePath = coverImageFile
+      ? `/uploads/${publisherUserName}/${path.basename(coverImageFile.path)}`
+      : existingNews.coverImage;
+
+    const updatedNews = await prisma.news.update({
+      where: { id: newsId },
+      data: {
+        title: req.body.title || existingNews.title,
+        content: req.body.content || existingNews.content,
+        coverImage: coverImagePath,
+        publisherUserName: publisherUserName,
+      },
+    });
+
+    res.status(200).json({
+      message: "News updated successfully",
+      status: "success",
+      data: {
+        id: updatedNews.id,
+        title: updatedNews.title,
+        content: updatedNews.content,
+        coverImage: convertToUrl(updatedNews.coverImage),
+        publisherUserName: updatedNews.publisherUserName,
+        status: updatedNews.status,
+        createdAt: updatedNews.createdAt,
+        updatedAt: updatedNews.updatedAt,
+      },
+    });
+  } catch (error) {
+    console.error("Error updating news:", error);
+    cleanupFiles(req.files);
+    res.status(500).json({
+      message: "Internal server error",
+      status: "failed",
+      data: null,
+    });
+  }
+};
+
 //approve a news
 exports.approveNews = async (req, res) => {
   try {
@@ -320,6 +429,63 @@ exports.suspendNews = async (req, res) => {
       data: null,
     });
   } catch {
+    res.status(500).json({
+      message: "Internal server error",
+      status: "failed",
+      data: null,
+    });
+  }
+};
+
+//report a news
+exports.reportNews = async (req, res) => {
+  try {
+    if (!req.body.newsId) {
+      return res.status(400).json({
+        message: "id is required",
+        status: "failed",
+        data: null,
+      });
+    }
+    if (!req.body.reason) {
+      return res.status(400).json({
+        message: "reason is required",
+        status: "failed",
+        data: null,
+      });
+    }
+    const news = await prisma.news.findUnique({
+      where: { id: req.body.newsId },
+    });
+    if (!news) {
+      return res.status(404).json({
+        message: "News not found",
+        status: "failed",
+        data: null,
+      });
+    }
+
+    const report = await prisma.report.create({
+      data: {
+        newsId: req.body.newsId,
+        reason: req.body.reason,
+        description: req.body.description || "",
+      },
+    });
+
+    res.status(201).json({
+      message: "Report created successfully",
+      status: "success",
+      data: {
+        id: report.id,
+        newsId: report.newsId,
+        reason: report.reason,
+        description: report.description,
+        news: news,
+      },
+    });
+  } catch (error) {
+    console.error("Error creating report:", error);
     res.status(500).json({
       message: "Internal server error",
       status: "failed",

@@ -7,9 +7,11 @@ function jwtMiddleware(req, res, next) {
   const authHeader = req.headers.authorization;
 
   if (!authHeader) {
-    return res
-      .status(401)
-      .json({ message: "Unauthorized - No token provided" });
+    return res.status(401).json({
+      message: "Unauthorized - No token provided",
+      status: "failed",
+      data: null,
+    });
   }
 
   try {
@@ -17,14 +19,20 @@ function jwtMiddleware(req, res, next) {
     const token = loggedUser.token;
 
     if (!token) {
-      return res
-        .status(401)
-        .json({ message: "Unauthorized - No token provided" });
+      return res.status(401).json({
+        message: "Unauthorized - No token provided",
+        status: "failed",
+        data: null,
+      });
     }
 
     jwt.verify(token, secretKey, (err, decoded) => {
       if (err) {
-        return res.status(403).json({ message: "Forbidden - Invalid token" });
+        return res.status(403).json({
+          message: "Forbidden - Invalid token",
+          status: "failed",
+          data: null,
+        });
       }
 
       req.user = decoded;
@@ -34,7 +42,11 @@ function jwtMiddleware(req, res, next) {
     console.error(error);
     return res
       .status(400)
-      .json({ message: "Invalid authorization header format" });
+      .json({
+        message: "Invalid authorization header format",
+        status: "failed",
+        data: null,
+      });
   }
 }
 

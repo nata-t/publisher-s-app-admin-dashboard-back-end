@@ -33,7 +33,7 @@ router.post(
 router.post("/edit-news", jwtMiddleware, uploadFields, newsManagement.editNews);
 router.get("/all-news", newsManagement.allNews);
 router.post("/get-news-by-id", newsManagement.getNewsById);
-router.get(
+router.post(
   "/get-news-by-publisher-userName",
   newsManagement.getNewsByPublisherUserName
 );

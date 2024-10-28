@@ -128,6 +128,7 @@ exports.getPublishersTable = async (req, res) => {
         fullName: `${publisher.firstName} ${publisher.lastName}`,
         email: publisher.email,
         phoneNumber: publisher.phone,
+        requestedAt: publisher.createdAt,
         publishedNews,
         pendingNews,
         suspendedNews,

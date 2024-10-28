@@ -23,6 +23,7 @@ exports.allNews = async (req, res) => {
     const news = await prisma.news.findMany({
       include: {
         reports: true,
+        publisher: true,
       },
       orderBy: {
         createdAt: "desc",
@@ -34,6 +35,7 @@ exports.allNews = async (req, res) => {
       content: news.content,
       coverImage: convertToUrl(news.coverImage),
       publisherUserName: news.publisherUserName,
+      publisherName: news.publisher.firstName + " " + news.publisher.lastName,
       status: news.status,
       createdAt: news.createdAt,
       updatedAt: news.updatedAt,

@@ -24,6 +24,9 @@ exports.allNews = async (req, res) => {
       include: {
         reports: true,
       },
+      orderBy: {
+        createdAt: "desc",
+      },
     });
     const allNews = news.map((news) => ({
       id: news.id,
@@ -181,6 +184,14 @@ exports.createNews = async (req, res) => {
         data: null,
       });
     }
+    if (publisher.status === "PENDING") {
+      cleanupFiles(req.files);
+      return res.status(401).json({
+        message: "Publisher is pending",
+        status: "failed",
+        data: null,
+      });
+    }
 
     const errors = validateNewsData(req.body);
     if (errors.length > 0) {
@@ -262,6 +273,14 @@ exports.editNews = async (req, res) => {
       cleanupFiles(req.files);
       return res.status(401).json({
         message: "Publisher is suspended",
+        status: "failed",
+        data: null,
+      });
+    }
+    if (publisher.status === "PENDING") {
+      cleanupFiles(req.files);
+      return res.status(401).json({
+        message: "Publisher is pending",
         status: "failed",
         data: null,
       });

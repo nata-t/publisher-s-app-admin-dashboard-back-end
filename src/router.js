@@ -2,24 +2,26 @@ const express = require("express"),
   router = express.Router(),
   publisherManagement = require("./publisherManagment"),
   newsManagement = require("./newsManagement"),
+  dashboard = require("./dashboard"),
   jwtMiddleware = require("../jwtMiddleware"),
-  upload = require("../newsMulterMiddleware");
+  upload = require("../newsMulterMiddleware"),
+  adminMiddleware = require("../adminMiddleware");
 
 const uploadFields = upload.fields([{ name: "coverImage", maxCount: 1 }]);
 
 router.get("/all-publishers", publisherManagement.allPublishers);
-router.get(
+router.post(
   "/get-publisher-by-userName",
   publisherManagement.getPublisherByUserName
 );
 router.post(
   "/approve-publisher",
-  jwtMiddleware,
+  adminMiddleware,
   publisherManagement.approvePublisher
 );
 router.post(
   "/suspend-publisher",
-  jwtMiddleware,
+  adminMiddleware,
   publisherManagement.suspendPublisher
 );
 router.post(
@@ -30,13 +32,19 @@ router.post(
 );
 router.post("/edit-news", jwtMiddleware, uploadFields, newsManagement.editNews);
 router.get("/all-news", newsManagement.allNews);
-router.get("/get-news-by-id", newsManagement.getNewsById);
+router.post("/get-news-by-id", newsManagement.getNewsById);
 router.get(
   "/get-news-by-publisher-userName",
   newsManagement.getNewsByPublisherUserName
 );
-router.post("/approve-news", jwtMiddleware, newsManagement.approveNews);
-router.post("/suspend-news", jwtMiddleware, newsManagement.suspendNews);
+router.post("/approve-news", adminMiddleware, newsManagement.approveNews);
+router.post("/suspend-news", adminMiddleware, newsManagement.suspendNews);
 router.post("/report-news", newsManagement.reportNews);
+router.get("/dashboard-stats", adminMiddleware, dashboard.getDashboardStats);
+router.post(
+  "/get-publishers-table",
+  adminMiddleware,
+  dashboard.getPublishersTable
+);
 
 module.exports = router;

@@ -47,4 +47,6 @@ router.post(
   dashboard.getPublishersTable
 );
 
+router.get("/all-reports", adminMiddleware, dashboard.getReportsTable);
+
 module.exports = router;

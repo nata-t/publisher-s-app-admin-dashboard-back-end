@@ -485,6 +485,13 @@ exports.reportNews = async (req, res) => {
         data: null,
       });
     }
+    if (news.status !== "APPROVED") {
+      return res.status(409).json({
+        message: "News is not approved yet",
+        status: "failed",
+        data: null,
+      });
+    }
 
     const report = await prisma.report.create({
       data: {
